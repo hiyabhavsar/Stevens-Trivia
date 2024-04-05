@@ -6,7 +6,7 @@ $disabled: #9c9c9c;
 $foreground: #000000;
 
 body{
-    font-family:'Mochiy Pop One';
+    font-family:'Varela Round';
     font-weight: bold;
     background: $bg;
     overflow: hidden;
@@ -20,36 +20,40 @@ body{
 }
 
 .quiz-container{
-//    width: 500px;
-//    background: $bg;
-//    opacity: 0.3;
-//    border-radius: 4px;
-//    margin-top: 100px;
-//    padding: 30px 60px;
-//    box-sizing: border-box;
-background-color: $primary;
-background-size: cover;
-float: left;
-padding: 14px 16px;
-text-align: center;
-text-decoration: none;
-font-size: 17px;
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-height: 80px;
+   width: 500px; //100%
+   background: $primary;
+   //opacity: 0.3;
+   border-radius: 4px;
+   margin-top: 100px;
+   padding: 30px 60px;
+   box-sizing: content-box;
+// background-color: $primary;
+// background-size: cover;
+// float: left;
+// padding: 14px 16px;
+// text-align: center;
+// text-decoration: none;
+// font-size: 17px;
+// position: fixed;
+// top: 0;
+// left: 0;
+// right: 0;
+// height: 80px;
 
    .active-question-no{
     font-size: 32px;
     font-weight: 500;
     color: $bg;
-    margin-top: 80px;
-    display: inline;
    }
    .total-question{
     font-size: 16px;
     font-weight: 500;
-    color: $foreground;
+    color: $bg;
+   }
+   h2{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    color: $bg;
    }
 }
