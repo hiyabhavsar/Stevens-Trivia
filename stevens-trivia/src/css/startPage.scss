@@ -1,0 +1,34 @@
+// StartPage.scss
+$start-page-bg: #9D1535; // Use variables for colors to easily change them later
+$text-color: white;
+
+.start-page {
+  background-color: $start-page-bg;
+  color: $text-color;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+
+  .title {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+
+  .how-to-play-button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid $text-color;
+    color: $text-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $text-color;
+      color: $start-page-bg;
+    }
+  }
+}

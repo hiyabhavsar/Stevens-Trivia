@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import "./css/startPage.scss";
 
 function StartPage() {
   let navigate = useNavigate();
