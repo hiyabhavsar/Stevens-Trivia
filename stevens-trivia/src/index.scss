@@ -56,4 +56,65 @@ body{
     margin: 0;
     color: $bg;
    }
+   ul{
+    margin-top: 20px;
+    margin-left: -40px;
+    //option choices buttons styling
+    li{
+        text-decoration: none;
+        list-style: none;
+        color: $bg;
+        font-size: 16px;
+        background: $primary;
+        border: 1px solid $disabled;
+        border-radius:16px ;
+        padding: 11px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+    .selected-answer{
+        background: $foreground;
+        border: 1px solid $accent;
+        color: $primary;
+    }
+   }
+   .footer{
+    display: flex;
+    justify-content: flex-end;
+   }
+   //next button styling
+   button{
+    background: $disabled;
+    border-radius: 9px;
+    font-size: 18px;
+    color:$primary;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+
+    &:disabled{
+        background: $bg-accent;
+        color: $disabled;
+        cursor: not-allowed;
+    }
+   }
+   .result{
+    text-align: center;
+    h3{
+        font-size: 24px;
+        letter-spacing: 1.4px;
+        text-align: center;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 500;
+        span{
+            color:$foreground;
+            font-size: 22px;
+        }
+    }
+   }
+   
 }
