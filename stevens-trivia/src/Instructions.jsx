@@ -9,10 +9,17 @@ function InstructionsPage() {
   };
   return (
     <div className="instructions-page">
-      <div className="title">Instructions</div>
-      <button onClick={navigateToGame} className="start-button">
-        START
-      </button>
+      <div className="instructions-card">
+        <h2 class="title">Instructions</h2>
+        <div className="actual-instructions">
+          Welcome to Stevens Trivia! To begin, press the Start button. Please
+          answer each question to the best of your ability. Each question will
+          have four answer options.
+        </div>
+        <button onClick={navigateToGame} className="start-button">
+          START
+        </button>
+      </div>
     </div>
   );
 }

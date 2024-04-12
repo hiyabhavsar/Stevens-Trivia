@@ -1,9 +1,10 @@
-// Instructions.scss
-$instructions-bg: #9D1535; // Use variables for colors to easily change them later
+// InstructionsPage.scss
+$background-color: #9D1535; // Main background color
+$card-color: darken($background-color, 4%); // Darker shade for the card
 $text-color: white;
 
 .instructions-page {
-  background-color: $instructions-bg;
+  background-color: $background-color;
   color: $text-color;
   height: 100vh;
   width: 100vw;
@@ -13,22 +14,38 @@ $text-color: white;
   align-items: center;
   font-family: 'Arial', sans-serif;
 
-  .title {
-    font-size: 4em;
-    margin-bottom: 20px;
+  .instructions-card {
+    background-color: $card-color;
+    border-radius: 10px; // Adjust the border radius to your preference
+    padding: 50px; // Adjust padding to your preference
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Simple shadow for depth
+    text-align: center;
+    max-width: 50%;
+
+    .instructions-title {
+      font-size: 2em; // Adjust font size to your preference
+      margin-bottom: 100px; // Space between the title and the button
+      
+    }
+    .actual-instructions{
+        font-size: 1em;
+        margin-bottom: 20px; 
+        overflow-wrap: break-word;
+    }
   }
 
   .start-button {
-    font-size: 1.5em;
-    padding: 10px 20px;
+    font-size: 1.2em; // Adjust font size to your preference
+    padding: 10px 20px; // Adjust padding to your preference
     background-color: transparent;
     border: 2px solid $text-color;
     color: $text-color;
     cursor: pointer;
+    border-radius: 5px; // Slight rounding on the button edges
 
     &:hover {
       background-color: $text-color;
-      color: $instructions-bg;
+      color: $background-color;
     }
   }
 }
