@@ -1,6 +1,7 @@
 import "./css/App.css";
 import Quiz from "./Quiz";
 import StartPage from "./startPage";
+import InstructionsPage from "./Instructions";
 import {
   BrowserRouter as Router,
   Route,
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<StartPage />} />
+          <Route path="/Instructions" element={<InstructionsPage />} />
           <Route
             path="/Quiz"
             element={<Quiz questions={jsQuizz.questions} />}

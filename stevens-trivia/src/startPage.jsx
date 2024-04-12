@@ -4,7 +4,7 @@ import "./css/startPage.scss";
 function StartPage() {
   let navigate = useNavigate();
   const navigateToInstructions = () => {
-    let path = "./Quiz";
+    let path = "./Instructions";
     navigate(path);
   };
   return (
