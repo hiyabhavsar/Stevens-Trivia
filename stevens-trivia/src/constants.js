@@ -11,6 +11,7 @@ export const jsQuizz = {
       ],
       type: "MCQs",
       correctAnswer: "Virtual DOM",
+      explanation: "q1 explanation",
     },
     {
       question: "What is ReactJS?",
@@ -22,6 +23,7 @@ export const jsQuizz = {
       ],
       type: "MCQs",
       correctAnswer: "User Interface framework",
+      explanation: "q2 explanation",
     },
     {
       question:
@@ -29,12 +31,14 @@ export const jsQuizz = {
       choices: ["Render with arguments", "setState", "PropTypes", "props"],
       type: "MCQs",
       correctAnswer: "props",
+      explanation: "q3 explanation",
     },
     {
       question: "In which language is React.js written?",
       choices: ["Python", "Java", "C#", "JavaScript"],
       type: "MCQs",
       correctAnswer: "JavaScript",
+      explanation: "q4 explanation",
     },
     {
       question: "What is Babel?",
@@ -46,6 +50,7 @@ export const jsQuizz = {
       ],
       type: "MCQs",
       correctAnswer: "JavaScript compiler",
+      explanation: "q5 explanation",
     },
   ],
 };

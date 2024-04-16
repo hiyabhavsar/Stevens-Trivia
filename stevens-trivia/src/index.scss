@@ -4,6 +4,7 @@ $bg: #ffff;
 $bg-accent: #e7e8e9;
 $disabled: #9c9c9c;
 $foreground: #000000;
+$text-color: white;
 *{
     font-family: "Mochiy Pop P One", sans-serif;
     font-weight: 400;
@@ -77,11 +78,29 @@ body{
         cursor: pointer;
     }
     .selected-answer{
-        background: $foreground;
+        background-color: $text-color;
         border: 1px solid $accent;
         color: $primary;
+        .disabled-choice{
+        background: $bg-accent;
+        color: $disabled;
+        cursor: not-allowed;
     }
+       
+    }
+    
    }
+   .explanation{
+    text-align: center;
+    color:$primary;
+    p{
+        color:$bg;
+        font-size: 24px;
+        letter-spacing: 1.4px;
+        text-align: center;
+    }
+}
+
    .footer{
     display: flex;
     justify-content: flex-end;
@@ -103,10 +122,14 @@ body{
         color: $disabled;
         cursor: not-allowed;
     }
-   }
+
+}
+
    .result{
     text-align: center;
+    color:$bg;
     h3{
+        color:$bg;
         font-size: 24px;
         letter-spacing: 1.4px;
         text-align: center;
@@ -115,10 +138,10 @@ body{
         font-size: 16px;
         font-weight: 500;
         span{
-            color:$foreground;
+            color:$bg;
             font-size: 22px;
         }
     }
    }
-   
+
 }

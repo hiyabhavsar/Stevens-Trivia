@@ -10,7 +10,7 @@ function InstructionsPage() {
   return (
     <div className="instructions-page">
       <div className="instructions-card">
-        <h2 class="title">Instructions</h2>
+        <h2 className="title">Instructions</h2>
         <div className="actual-instructions">
           Welcome to Stevens Trivia! To begin, press the Start button. Please
           answer each question to the best of your ability. Each question will
