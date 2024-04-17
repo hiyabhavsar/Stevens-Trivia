@@ -235,56 +235,64 @@ export const jsQuizz = {
         "Fun Fact: Stevens Institute of Technology moved its campus to its current location in Hoboken, New Jersey, in 1871, marking a significant milestone in the university's history and expansion.",
     },
     {
-      //Question 17 **
-      question: "Question",
+      //Question 17
+      question:
+        "Which historical figure served as the first president of Stevens Institute of Technology?",
       choices: [
-        "Robotics and Aerospace Engineering",
-        "Cybersecurity and Marine Technology",
-        "Chemical Engineering and Sustainable Energy",
-        "Biomedical Engineering and Artificial Intelligence",
+        "Alexander Hamilton",
+        "John Quincy Adams",
+        "Henry Morton",
+        "Benjamin Franklin",
       ],
       type: "MCQs",
-      correctAnswer: "Cybersecurity and Marine Technology",
-      explanation: "Fun Fact:",
+      correctAnswer: "Henry Morton",
+      explanation:
+        "Fun Fact: Henry Morton, a prominent scientist and educator, served as the first president of Stevens Institute of Technology, guiding the institution through its formative years and laying the groundwork for its future success.",
     },
     {
       //Question 18
-      question: "Question",
+      question:
+        "Which building on the Stevens campus is home to the university's Center for Maritime Systems, dedicated to research and education in marine engineering and oceanography?",
       choices: [
-        "Robotics and Aerospace Engineering",
-        "Cybersecurity and Marine Technology",
-        "Chemical Engineering and Sustainable Energy",
-        "Biomedical Engineering and Artificial Intelligence",
+        "Jonas Hall",
+        "Morton-Peirce-Kidde Complex",
+        "Davidson Laboratory",
+        "McLean Hall",
       ],
       type: "MCQs",
-      correctAnswer: "Cybersecurity and Marine Technology",
-      explanation: "Fun Fact:",
+      correctAnswer: "McLean Hall",
+      explanation:
+        "Fun Fact: McLean Hall is home to the Center for Maritime Systems at Stevens Institute of Technology, where research and education in marine engineering and oceanography are conducted, contributing to advancements in maritime technology and environmental science.",
     },
     {
       //Question 19
-      question: "Question",
+      question:
+        "What is the name of the annual celebration at Stevens Institute of Technology that honors the university's founder and features a series of events, including lectures, exhibitions, and alumni gatherings?",
       choices: [
-        "Robotics and Aerospace Engineering",
-        "Cybersecurity and Marine Technology",
-        "Chemical Engineering and Sustainable Energy",
-        "Biomedical Engineering and Artificial Intelligence",
+        "Founder's Day",
+        "Stevens Fest",
+        "Pioneer Week",
+        "Legacy Celebration",
       ],
       type: "MCQs",
-      correctAnswer: "Cybersecurity and Marine Technology",
-      explanation: "Fun Fact:",
+      correctAnswer: "Founder's Day",
+      explanation:
+        "Fun Fact: Founder's Day is an annual celebration at Stevens Institute of Technology that honors the university's founder, Colonel John Stevens, with a series of events, including lectures, exhibitions, and alumni gatherings, commemorating his legacy and vision.",
     },
     {
       //Question 20
-      question: "Question",
+      question:
+        "What is the name of the iconic landmark on the Stevens campus that serves as a symbol of the university's maritime heritage and engineering prowess?",
       choices: [
-        "Robotics and Aerospace Engineering",
-        "Cybersecurity and Marine Technology",
-        "Chemical Engineering and Sustainable Energy",
-        "Biomedical Engineering and Artificial Intelligence",
+        "The Stevens Tower",
+        "The Shipyard Monument",
+        "The Great Binnacle",
+        "The Colossus",
       ],
       type: "MCQs",
-      correctAnswer: "Cybersecurity and Marine Technology",
-      explanation: "Fun Fact:",
+      correctAnswer: "The Colossus",
+      explanation:
+        "Fun Fact: The Colossus is an iconic landmark on the Stevens campus that serves as a symbol of the university's maritime heritage and engineering prowess, honoring its legacy in naval architecture and marine engineering.",
     },
   ],
 };
