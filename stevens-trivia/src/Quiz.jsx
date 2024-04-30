@@ -66,6 +66,7 @@ const Quiz = ({ questions }) => {
     <div className="quiz-container">
       {!showResult ? (
         <>
+          <span className="current-score">Score: {result.score}</span>
           <div className="progress-bar-container">
             <div
               className="progress-bar"
@@ -76,8 +77,8 @@ const Quiz = ({ questions }) => {
             <span className="active-question-no">
               Question #: {currentQuestion + 1}
             </span>
-            <span className="current-score">Score: {result.score}</span>
           </div>
+
           <h2> {question}</h2>
           <ul>
             {choices.map((answer, index) => (

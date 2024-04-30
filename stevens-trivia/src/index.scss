@@ -41,12 +41,8 @@ body{
    .current-score{
     font-size: 25px;
     font-weight: 500;
-    color: $foreground;
-    text-align: right;
-    position: absolute;
-    top:65px;
-    right: 200px;
-    z-index: 10;
+    color: $bg;
+    text-align: left;
    }
    .progress-bar-container {
   width: 100%;
