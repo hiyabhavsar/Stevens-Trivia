@@ -1,8 +1,9 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Stevens Trivia is a web application that allows users to learn new facts about Stevens Institute of Technology. 
+The application is designed for incoming students and student organizations to better understand Stevens campus and its traditions. 
+The format of the application is a trivia game in which users are able to answer 20 questions regarding facts about Stevens
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the application type the following in your terminal:
+npm i (to install dependencies)
+npm run dev (to run the application)
