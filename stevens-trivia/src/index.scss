@@ -14,7 +14,7 @@ $text-color: white;
 body{
     font-weight: bold;
     background: $bg;
-    overflow: hidden;
+    overflow: auto;
     color: $foreground;
 
     display: flex;
@@ -27,34 +27,43 @@ body{
 .quiz-container{
    width: 500px; //100%
    background: $primary;
-   //opacity: 0.3;
    border-radius: 4px;
    margin-top: 100px;
    padding: 30px 60px;
    box-sizing: content-box;
-// background-color: $primary;
-// background-size: cover;
-// float: left;
-// padding: 14px 16px;
-// text-align: center;
-// text-decoration: none;
-// font-size: 17px;
-// position: fixed;
-// top: 0;
-// left: 0;
-// right: 0;
-// height: 80px;
+   overflow: auto;
 
    .active-question-no{
     font-size: 32px;
     font-weight: 500;
     color: $bg;
    }
-   .total-question{
-    font-size: 16px;
+   .current-score{
+    font-size: 25px;
     font-weight: 500;
-    color: $bg;
+    color: $foreground;
+    text-align: right;
+    position: absolute;
+    top:65px;
+    right: 200px;
+    z-index: 10;
    }
+   .progress-bar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  z-index: 1000px;
+  
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  transition: width 0.4s ease;
+  z-index: 100;
+}
    h2{
     font-size: 20px;
     font-weight: 500;
