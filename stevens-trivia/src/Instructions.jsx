@@ -14,7 +14,8 @@ function InstructionsPage() {
         <div className="actual-instructions">
           Welcome to Stevens Trivia! To begin, press the Start button. Please
           answer each question to the best of your ability. Each question will
-          have four answer options.
+          have four answer options. Each correct answer will be awarded 5
+          points.
         </div>
         <button onClick={navigateToGame} className="start-button">
           START
