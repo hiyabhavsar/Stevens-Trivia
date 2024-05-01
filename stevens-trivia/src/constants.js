@@ -1,3 +1,5 @@
+import { startTransition } from "react";
+
 export const jsQuizz = {
   questions: [
     {
@@ -301,4 +303,5 @@ export const resultInitialState = {
   score: 0,
   correctAnswers: 0,
   wrongAnswers: 0,
+  start: performance.now(),
 };

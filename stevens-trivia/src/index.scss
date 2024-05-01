@@ -93,6 +93,14 @@ body{
     }
        
     }
+    .correct-answer{
+        background-color: green !important;
+        color: $text-color !important;
+    }
+        .wrong-answer{
+        background-color: red !important;
+        color: $text-color !important;
+    }
     
    }
    .explanation{
@@ -108,7 +116,7 @@ body{
 
    .footer{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
    }
    //next button styling
    button{

@@ -7,6 +7,7 @@ const Quiz = ({ questions }) => {
   const [answerIdx, setAnswerIdx] = useState(null);
   const [answer, setAnswer] = useState(null);
   const [result, setResult] = useState(resultInitialState);
+  const [currentTime, setCurrentTime] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
   const [isAnswerSubmitted, setIsAnswerSubmitted] = useState(false);
@@ -14,7 +15,8 @@ const Quiz = ({ questions }) => {
   const { question, choices, correctAnswer, explanation } =
     questions[currentQuestion];
   const progressPercentage = ((currentQuestion + 1) / questions.length) * 100;
-
+  var start;
+  var end = 0;
   const onAnswerClick = (answer, index) => {
     if (!isAnswerSubmitted) {
       setAnswerIdx(index);
@@ -51,6 +53,7 @@ const Quiz = ({ questions }) => {
         setCurrentQuestion((prev) => prev + 1);
       } else {
         setCurrentQuestion(0);
+        setCurrentTime(performance.now()- currentTime);
         setShowResult(true);
       }
     }
@@ -58,6 +61,7 @@ const Quiz = ({ questions }) => {
 
   const onTryAgain = () => {
     setResult(resultInitialState);
+    setCurrentTime(performance.now());
     setShowResult(false);
     setShowExplanation(false);
   };
@@ -85,19 +89,18 @@ const Quiz = ({ questions }) => {
               <li
                 onClick={() => onAnswerClick(answer, index)}
                 key={answer}
-                className={`${answerIdx === index ? "selected-answer" : null} ${
-                  isAnswerSubmitted ? "disabled-choice" : null
-                }`}
+               className={`${answerIdx === index ? "selected-answer" : null}
+                ${isAnswerSubmitted ? "disabled-choice" : null }
+                ${(answer === correctAnswer)&&(isAnswerSubmitted)&&(answerIdx === index) ? "correct-answer" : null}
+                ${(answer != correctAnswer)&&(isAnswerSubmitted)&&(answerIdx === index) ? "wrong-answer" : null}
+                `}
+                
               >
                 {answer}
               </li>
             ))}
           </ul>
-          {showExplanation && (
-            <div className="explanation">
-              <p>{explanation}</p>
-            </div>
-          )}
+         
           <div className="footer">
             <button
               onClick={onClickNext}
@@ -109,7 +112,13 @@ const Quiz = ({ questions }) => {
                 ? "Finish"
                 : "Next"}
             </button>
+            
           </div>
+          {showExplanation && (
+            <div className="explanation">
+              <p>{explanation}</p>
+            </div>
+          )}
         </>
       ) : (
         <div className="result">
@@ -122,6 +131,9 @@ const Quiz = ({ questions }) => {
           </p>
           <p>
             Wrong Answers: <span>{result.wrongAnswers}</span>
+          </p>
+          <p>
+            Time: <span>{Math.trunc(currentTime/1000)}</span> s
           </p>
           <button onClick={onTryAgain}>Try Again</button>
         </div>
