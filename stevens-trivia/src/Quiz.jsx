@@ -91,7 +91,7 @@ const Quiz = ({ questions }) => {
                 key={answer}
                className={`${answerIdx === index ? "selected-answer" : null}
                 ${isAnswerSubmitted ? "disabled-choice" : null }
-                ${(answer === correctAnswer)&&(isAnswerSubmitted)&&(answerIdx === index) ? "correct-answer" : null}
+                ${(answer === correctAnswer)&&(isAnswerSubmitted) ? "correct-answer" : null}
                 ${(answer != correctAnswer)&&(isAnswerSubmitted)&&(answerIdx === index) ? "wrong-answer" : null}
                 `}
                 
